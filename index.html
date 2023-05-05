@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet API TOUCAN</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <img id="downScroll" src="down.png" alt="scroll down">
+
+        <div id="header">
+            <img id="logo" alt="logo" src="logo.png">
+            <input id="EAN" type="text" name="codeEAN" placeholder="Entrer un code EAN">
+            <input class="icon fa" id="button" type="submit" value="&#xf002">
+        </div>
+        <img id="feuillage-haut" src="feuillages-haut.png" alt="feuillages">
+
+        <div id="accueil">
+            <h1>Bienvenue dans la base de données de produits alimentaires <span>TOUCAN</span></h1>
+            <p id="explications">Entrez les 13 chiffres du code EAN d'un aliment pour obtenir ses principales informations.</p>
+            <a href="https://fr.wikipedia.org/wiki/Code-barres_EAN" target="_blank">Qu'est-ce qu'un code EAN ?</a>
+            <img id="feuillage-bas" src="feuillages-bas.png" alt="feuillages avec toucan">
+        </div>
+
+        <div id="bureau">
+            <div id="blue"></div>
+        <div id="resultat-1">
+            <div id=img-holder>
+                <img id="img-food" alt="aliment">
+            </div>
+            <h2 id="food-name"></h2>
+            <p id="brand"></p>
+        </div>
+
+        
+        <div id="resultat-2">
+            <ul>
+                <li class="li-title">Nom générique</li>
+                    <li class="no-li padding-2" id="gen-name"></li>
+                <li class="li-title">Catégories alimentaires</li>
+                    <li class="no-li padding" id="food-category"></li>
+                <li class="li-title">Ingrédients</li>
+                    <li class="no-li" id="ingredients"></li>
+                <li class="li-title">Allergènes</li>
+                    <li class="no-li" id="allergens"></li>
+                <li class="li-title">Packaging</li>
+                    <li class="no-li" id="packaging"></li>
+            </ul>
+            <img id="feuillage-bas" src="feuillages-bas.png" alt="feuillages avec toucan">
+        </div>
+    </body>
+    <script src="main.js" type="text/javascript"></script>
+</html>
